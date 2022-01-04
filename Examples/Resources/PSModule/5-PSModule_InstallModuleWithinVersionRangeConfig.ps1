@@ -19,10 +19,10 @@
 
 <#
     .SYNOPSIS
-        Configuration that installs a module withing a specific version range.
+        Configuration that installs a module within a specific version range.
 
     .DESCRIPTION
-        Configuration that installs a module withing a specific version range.
+        Configuration that installs a module within a specific version range.
 
     .PARAMETER NodeName
         The names of one or more nodes to compile a configuration for.
