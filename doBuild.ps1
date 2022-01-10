@@ -49,6 +49,7 @@ function DoBuild
             # Build source
             Write-Verbose -Verbose -Message "Building with configuration: $BuildConfiguration, framework: $BuildFramework"
             Write-Verbose -Verbose -Message "Build location: PSScriptRoot: $PSScriptRoot, PWD: $pwd"
+            Write-Verbose -Verbose -Message "Anam: Build srcPath: $BuildSrcPath"
             dotnet publish --configuration $BuildConfiguration --framework $BuildFramework --output $BuildSrcPath -warnaserror
             if ($LASTEXITCODE -ne 0) {
                 throw "Build failed with exit code: $LASTEXITCODE"
@@ -56,18 +57,7 @@ function DoBuild
 
             # Place build results
             $assemblyNames = @(
-                'PowerShellGet'
-                'MoreLinq'
-                'NuGet.Commands'
-                'NuGet.Common'
-                'NuGet.Configuration'
-                'NuGet.Frameworks'
-                'NuGet.Packaging'
-                'NuGet.ProjectModel'
-                'NuGet.Protocol'
-                'NuGet.Repositories'
-                'NuGet.Versioning'
-                'Newtonsoft.Json'
+                'PowerShellGetDSC'
             )
 
             $buildSuccess = $true
