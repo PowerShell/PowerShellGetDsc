@@ -27,10 +27,6 @@ function DoBuild
     Write-Verbose -Verbose -Message "Copy-Item ${SrcPath}/DSCResources to '$BuildOutPath'"
     Copy-Item -Path "${SrcPath}/DSCResources" -Dest "$BuildOutPath" -Force -Recurse
 
-    # Copy help
-    Write-Verbose -Verbose -Message "Copying help files to '$BuildOutPath'"
-    Copy-Item -Path "${HelpPath}/${Culture}" -Dest "$BuildOutPath" -Recurse -Force
-
     # Copy license
     Write-Verbose -Verbose -Message "Copying LICENSE file to '$BuildOutPath'"
     Copy-Item -Path "./LICENSE" -Dest "$BuildOutPath"
