@@ -6,7 +6,7 @@
 #>
 @{
     # Version number of this module.
-    moduleVersion      = '0.0.0.1'
+    moduleVersion      = '1.0.0.0'
 
     # ID used to uniquely identify this module
     GUID               = 'e102ebd2-bdc3-4d0f-bc93-4b8cc3eb7074'
@@ -27,7 +27,7 @@
     PowerShellVersion  = '5.0'
 
     # Minimum version of the common language runtime (CLR) required by this module
-    CLRVersion         = '4.0'
+    # CLRVersion         = '4.0'
 
     # Functions to export from this module
     FunctionsToExport  = @()
