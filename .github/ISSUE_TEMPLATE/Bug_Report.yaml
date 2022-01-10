@@ -9,8 +9,9 @@ body:
       [Feedback Hub app](https://support.microsoft.com/windows/send-feedback-to-microsoft-with-the-feedback-hub-app-f59187f8-8739-22d6-ba93-f66612949332)
 
       For PowerShellGet v2 issues, please use [PowerShellGetv2 repo](https://github.com/PowerShell/PowerShellGetv2).
+      For PowerShellGet v3 issues, please use [PowerShellGetv3 repo](https://github.com/PowerShell/PowerShellGet).
 
-      This repository is **ONLY** for PowerShellGet v3 issues.
+      This repository is **ONLY** for PowerShellGetDSC issues.
 - type: checkboxes
   attributes:
     label: Prerequisites
